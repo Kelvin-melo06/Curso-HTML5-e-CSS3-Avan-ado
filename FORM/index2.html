@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h2>Formulários</h2>
+    <form action="register.php" method="get">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name">
+        </div>
+
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
+
+        <div>
+            <label for="job">Selecione sua profissão</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="test">Test/QA</option>
+                <option value="devops" selected>DevOps</option>
+                <option value="web">Desenvolver Web</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job" multiple>
+                <option value="programador">Programador</option>
+                <option value="test">Test/QA</option>
+                <option value="devops">DevOps</option>
+                <option value="web">Desenvolver Web</option>
+                <option value="mobile">Desenvolver Mobile</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset> <!-- Agrupamento de campos -->
+                <legend>Preencha suas informações:</legend>
+                <label for="first-name">Nome:</label>
+                <input type="text" name="first-name">
+                <label for="last-name">Sobrenome:</label>
+                <input type="text" name="last-name">
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="flavor">Escolha seu sabor:</label>
+            <input type="text" name="flavor" list="flavors">
+
+            <datalist id="flavors">
+                <option value="Chocolate">
+                <option value="Morango">
+                <option value="Baunilha">
+                <option value="Limão">
+                <option value="Maracujá">
+            </datalist>
+        </div>
+
+        <div>
+            <label for="submit"></label>
+            <input type="submit" value="Enviar" name="submit">
+        </div>
+
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                
+                <input type="radio" name="car_model" id="bmw" value="bmw">
+                <label for="bmw">Bmw</label>
+
+                <input type="radio" name="car_model" id="ferrari" value="ferrari">
+                <label for="ferrari">Ferrari</label>
+
+                <input type="radio" name="car_model" id="sandero" value="sandero">
+                <label for="sandero">Sandero</label>
+
+            </div>
+        </div>
+
+        <div>
+            <label for="reset"></label>
+            <input type="reset" value="Limpar" name="reset">
+        </div>
+    </form>
+</body>
+</html>
