@@ -63,25 +63,98 @@
             </datalist>
         </div>
 
+        
         <div>
-            <label for="submit"></label>
-            <input type="submit" value="Enviar" name="submit">
+            
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+
+            <div class="radio">
+                
+                <div>
+                    <input type="radio" name="car_model" id="bmw" value="bmw">
+                    <label for="bmw">Bmw</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="car_model" id="ferrari" value="ferrari">
+                    <label for="ferrari">Ferrari</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="car_model" id="sandero" value="sandero">
+                    <label for="sandero">Sandero</label>
+                </div>
+                
+            </div>
+
         </div>
 
         <div>
-            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <label for="opcionais">Opcionais de um carro:</label>
             <div class="radio">
-                
-                <input type="radio" name="car_model" id="bmw" value="bmw">
-                <label for="bmw">Bmw</label>
 
-                <input type="radio" name="car_model" id="ferrari" value="ferrari">
-                <label for="ferrari">Ferrari</label>
+                <div>
+                    <input type="checkbox" name="opcao[]" id="opcionais" value="big_tires">
+                    <label for="opcionais">Pneus Grandes</label>
+                </div>
 
-                <input type="radio" name="car_model" id="sandero" value="sandero">
-                <label for="sandero">Sandero</label>
+                <div>
+                    <input type="checkbox" name="opcao[]" id="opcionais" value="turbo_engine">
+                    <label for="opcionais">Motor turbo</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="opcao[]" id="opcionais">
+                    <label for="opcionais">Hibrídos</label>
+                </div>
 
             </div>
+        </div>
+
+        <div>
+
+            <label for="data">Seu aniversario:</label>
+            <input type="date" name="aniversario" id="data">
+
+        </div>
+
+        <div>
+
+            <label for="number">Quanto voce ganha no seu emprego atual?</label>
+            <input type="number" name="numeros" id="number">
+
+        </div>
+
+        <div>
+
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" name="e-mail" id="email">
+
+        </div>
+
+        <div>
+
+            <label for="img">Envie seu arquivo:</label>
+            <input type="file" name="arquivo" id="img">
+
+        </div>
+
+        <div>
+
+            <label for="here">Digitação</label>
+            <input type="text" id="here" value="Digite aqui">
+
+        </div>
+
+        
+
+
+
+
+
+        <div>
+            <label for="submit"></label>
+            <input type="submit" value="Enviar" name="submit">
         </div>
 
         <div>
